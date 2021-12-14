@@ -17,9 +17,9 @@ function Shop() {
       .then((response) => response.json())
       //Проверяем, что ответ пришел и сохраняем в goods
       .then((data) => {
-        data.featured && setGoods(data.featured);
+        console.log(data);
+        data.shop && setGoods(data.shop);
         setLoading(false);
-        console.log(goods);
       });
   }, []);
 

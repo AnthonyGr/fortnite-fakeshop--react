@@ -1,18 +1,21 @@
 function GoodsItem(props) {
-  const { id, name, description, price, full_background } = props;
+  // TODO: Переписать деструктуризацию!
+  const { mainId, displayName, displayDescription } = props;
 
   return (
-    <div className="card" id={id}>
+    <div className="card" id={mainId}>
       <div className="card-image">
-        <img src={full_background} alt={name} />
-        <span className="card-title">{name}</span>
+        <img src={props.displayAssets[0].background} alt={displayName} />
       </div>
       <div className="card-content">
-        <p>{description}</p>
+        <span className="card-title">{displayName}</span>
+        <p>{displayDescription}</p>
       </div>
       <div className="card-action">
         <button className="btn">Купить</button>
-        <span className="rigth">{price}</span>
+        <span className="right" style={{ fontSize: '1.6rem' }}>
+          {props.price.finalPrice} руб.
+        </span>
       </div>
     </div>
   );
