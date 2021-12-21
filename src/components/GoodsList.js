@@ -1,7 +1,7 @@
 import GoodsItem from './GoodsItem';
 
 function GoodsList(props) {
-  const { goods = [] } = props;
+  const { goods = [], addToCart } = props;
 
   console.log(goods);
   if (!goods.length) {
@@ -11,7 +11,7 @@ function GoodsList(props) {
   return (
     <div className="goods">
       {goods.map((item) => (
-        <GoodsItem key={item.id} {...item} />
+        <GoodsItem key={item.id} {...item} addToCart={addToCart} />
       ))}
     </div>
   );

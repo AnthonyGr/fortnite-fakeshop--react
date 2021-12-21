@@ -1,6 +1,7 @@
 function GoodsItem(props) {
   // TODO: Переписать деструктуризацию!
-  const { mainId, displayName, displayDescription } = props;
+  const { mainId, displayName, displayDescription, addToCart } = props;
+  const price = props.price.finalPrice;
 
   return (
     <div className="card" id={mainId}>
@@ -12,9 +13,11 @@ function GoodsItem(props) {
         <p>{displayDescription}</p>
       </div>
       <div className="card-action">
-        <button className="btn">Купить</button>
+        <button className="btn" onClick={() => addToCart({ mainId, displayName, price })}>
+          Купить
+        </button>
         <span className="right" style={{ fontSize: '1.6rem' }}>
-          {props.price.finalPrice} руб.
+          {price} руб.
         </span>
       </div>
     </div>
