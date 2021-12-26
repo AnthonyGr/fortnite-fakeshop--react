@@ -1,7 +1,7 @@
 import CartItem from './CartItem';
 
 function CartList(props) {
-  const { order = [], handleCartShow } = props;
+  const { order = [], handleCartShow, removeFromCart, changeQuantity } = props;
 
   const totalPrice = order.reduce((sum, el) => {
     return sum + el.price * el.quantity;
@@ -11,7 +11,9 @@ function CartList(props) {
     <ul class="collection cart-list">
       <li class="collection-item active">Корзина:</li>
       {order.length ? (
-        order.map((item) => <CartItem key={item.mainId} {...item} />)
+        order.map((item) => (
+          <CartItem key={item.mainId} removeFromCart={removeFromCart} changeQuantity={changeQuantity} {...item} />
+        ))
       ) : (
         <li class="collection-item">Корзина пуста</li>
       )}
