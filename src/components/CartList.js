@@ -17,7 +17,10 @@ function CartList(props) {
       ) : (
         <li class="collection-item">Корзина пуста</li>
       )}
-      <li class="collection-item active">Общая стоимость: {totalPrice}</li>
+      <li class="collection-item active">
+        Общая стоимость: {totalPrice}
+        <button className="secondary-content btn-small">Оформить</button>
+      </li>
       <i class="material-icons basket-close" onClick={handleCartShow}>
         close
       </i>

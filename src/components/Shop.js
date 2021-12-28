@@ -5,12 +5,14 @@ import Preloader from './Preloader';
 import GoodsList from './GoodsList';
 import Cart from './Cart';
 import CartList from './CartList';
+import Alert from './Alert';
 
 function Shop() {
   const [goods, setGoods] = useState([]);
   const [loading, setLoading] = useState(true);
   const [order, setOrder] = useState([]);
   const [isCartShow, setCartShow] = useState(false);
+  const [alertName, setAlertName] = useState('');
 
   function addToCart(item) {
     const itemIndex = order.findIndex((orderItem) => orderItem.mainId === item.mainId);
@@ -33,6 +35,7 @@ function Shop() {
       });
       setOrder(newOrder);
     }
+    setAlertName(item.displayName);
   }
 
   function changeQuantity(n, itemId) {
@@ -57,6 +60,10 @@ function Shop() {
 
   const handleCartShow = () => {
     setCartShow(!isCartShow);
+  };
+
+  const closeAlert = () => {
+    setAlertName('');
   };
 
   useEffect(function getGoods() {
@@ -85,6 +92,7 @@ function Shop() {
           changeQuantity={changeQuantity}
         />
       )}
+      {alertName && <Alert name={alertName} closeAlert={closeAlert} />}
     </main>
   );
 }
