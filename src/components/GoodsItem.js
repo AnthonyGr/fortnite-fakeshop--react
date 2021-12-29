@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
 function GoodsItem(props) {
   // TODO: Переписать деструктуризацию!
-  const { mainId, displayName, displayDescription, addToCart } = props;
+  const { mainId, displayName, displayDescription } = props;
   const price = props.price.finalPrice;
+
+  const { addToCart } = useContext(ShopContext);
 
   return (
     <div className="card" id={mainId}>
