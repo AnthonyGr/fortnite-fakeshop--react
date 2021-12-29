@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/fortnite-shop--udemy-course--react/static/css/main.3588306f.chunk.css",
-    "main.js": "/fortnite-shop--udemy-course--react/static/js/main.9ab335e6.chunk.js",
-    "main.js.map": "/fortnite-shop--udemy-course--react/static/js/main.9ab335e6.chunk.js.map",
+    "main.js": "/fortnite-shop--udemy-course--react/static/js/main.30283eb0.chunk.js",
+    "main.js.map": "/fortnite-shop--udemy-course--react/static/js/main.30283eb0.chunk.js.map",
     "runtime-main.js": "/fortnite-shop--udemy-course--react/static/js/runtime-main.70992f36.js",
     "runtime-main.js.map": "/fortnite-shop--udemy-course--react/static/js/runtime-main.70992f36.js.map",
-    "static/js/2.4a094267.chunk.js": "/fortnite-shop--udemy-course--react/static/js/2.4a094267.chunk.js",
-    "static/js/2.4a094267.chunk.js.map": "/fortnite-shop--udemy-course--react/static/js/2.4a094267.chunk.js.map",
+    "static/js/2.c3a71536.chunk.js": "/fortnite-shop--udemy-course--react/static/js/2.c3a71536.chunk.js",
+    "static/js/2.c3a71536.chunk.js.map": "/fortnite-shop--udemy-course--react/static/js/2.c3a71536.chunk.js.map",
     "index.html": "/fortnite-shop--udemy-course--react/index.html",
     "static/css/main.3588306f.chunk.css.map": "/fortnite-shop--udemy-course--react/static/css/main.3588306f.chunk.css.map",
-    "static/js/2.4a094267.chunk.js.LICENSE.txt": "/fortnite-shop--udemy-course--react/static/js/2.4a094267.chunk.js.LICENSE.txt"
+    "static/js/2.c3a71536.chunk.js.LICENSE.txt": "/fortnite-shop--udemy-course--react/static/js/2.c3a71536.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.70992f36.js",
-    "static/js/2.4a094267.chunk.js",
+    "static/js/2.c3a71536.chunk.js",
     "static/css/main.3588306f.chunk.css",
-    "static/js/main.9ab335e6.chunk.js"
+    "static/js/main.30283eb0.chunk.js"
   ]
 }
