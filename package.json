@@ -1,6 +1,6 @@
 {
   "name": "fortnite-shop",
-  "homepage": "https://AnthonyGr.github.io/fortnite-shop--udemy-course--react",
+  "homepage": "https://anthonygr.github.io/fortnite-fakeshop--react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,9 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	 "predeploy": "npm run build",
-	 "deploy": "gh-pages -d build"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
