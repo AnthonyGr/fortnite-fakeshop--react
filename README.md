@@ -1,4 +1,4 @@
-# Шаблон каталога интернет-магазина (учебный проект c Udemy)
+# Тестовый каталог интернет-магазина
 
 
 ## Использованные технологии:
@@ -15,5 +15,5 @@
 npm install
 
 ## Открыть на GP-pages:
-https://anthonygr.github.io/fortnite-shop--udemy-course--react/
+https://anthonygr.github.io/fortnite-fakeshop--react/
 
